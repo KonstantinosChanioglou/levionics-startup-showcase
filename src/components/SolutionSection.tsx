@@ -5,7 +5,7 @@ const SolutionSection = () => (
         Breaking the Trade-Off
       </h2>
       <p className="text-muted-foreground text-lg leading-relaxed mb-4">
-        Levionics introduces a new class of <strong className="text-foreground">magnetic-levitation gyroscopes</strong> that deliver navigation-grade stability without the size, power, and cost penalties of today's high-end systems.
+        Levionics introduces a new class of <strong className="text-primary">magnetic-levitation gyroscopes</strong> that deliver navigation-grade stability without the size, power, and cost penalties of today's high-end systems.
       </p>
       <p className="text-muted-foreground text-lg leading-relaxed mb-10">
         By replacing mechanical springs with controlled passive diamagnetic levitation, we eliminate drift at its source. The result: FOG-level performance in a device that is <strong className="text-foreground">10× smaller</strong>, consumes <strong className="text-foreground">10× less power</strong>, and is <strong className="text-foreground">significantly more cost-effective</strong>.

@@ -15,7 +15,7 @@ const TeamSection = () => (
       <div className="grid md:grid-cols-2 gap-6 mb-12">
         {team.map((m) => (
           <div key={m.name} className="bg-card rounded-lg p-6 border border-border text-center">
-            <div className="w-16 h-16 rounded-full bg-primary/10 text-primary font-heading font-bold text-xl flex items-center justify-center mx-auto mb-4">
+            <div className="w-16 h-16 rounded-full bg-primary/15 text-primary font-heading font-bold text-xl flex items-center justify-center mx-auto mb-4">
               {m.name.split(" ").map(n => n[0]).join("")}
             </div>
             <h3 className="font-heading font-semibold text-foreground text-lg">{m.name}</h3>

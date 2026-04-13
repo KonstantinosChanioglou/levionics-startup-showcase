@@ -1,5 +1,5 @@
 const WhySection = () => (
-  <section id="why" className="py-24 px-6">
+  <section id="why" className="py-24 px-6 bg-background">
     <div className="max-w-4xl mx-auto">
       <h2 className="font-heading text-3xl md:text-4xl font-bold text-foreground mb-4">Why Levionics?</h2>
       <p className="text-muted-foreground text-lg mb-12">Patented technology developed at TU Delft, validated by industry leaders.</p>
