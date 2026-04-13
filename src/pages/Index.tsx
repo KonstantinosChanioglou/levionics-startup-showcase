@@ -4,6 +4,7 @@ import ProblemSection from "@/components/ProblemSection";
 import SolutionSection from "@/components/SolutionSection";
 import WhySection from "@/components/WhySection";
 import TeamSection from "@/components/TeamSection";
+import SupportedSection from "@/components/SupportedSection";
 import CTASection, { Footer } from "@/components/CTASection";
 
 const Index = () => (
@@ -14,6 +15,7 @@ const Index = () => (
     <SolutionSection />
     <WhySection />
     <TeamSection />
+    <SupportedSection />
     <CTASection />
     <Footer />
   </div>

@@ -9,7 +9,7 @@ const CTASection = () => (
       <p className="text-muted-foreground text-lg mb-10">
         We're looking for pilot partners and investors to bring navigation-grade magnetic-levitation gyroscopes to market.
       </p>
-      <a href="mailto:info@levionics.com" className="inline-block bg-primary text-primary-foreground px-8 py-3 rounded-md font-medium hover:opacity-90 transition-opacity">
+      <a href="mailto:k.chanioglou@levionics.com" className="inline-block bg-primary text-primary-foreground px-8 py-3 rounded-md font-medium hover:opacity-90 transition-opacity">
         Get In Touch
       </a>
     </div>
