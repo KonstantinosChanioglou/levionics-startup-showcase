@@ -1,5 +1,6 @@
 import maglevPhoto from "@/assets/maglev-photo.png";
 import tudelftLogo from "@/assets/tudelft-logo.png";
+import productComparison from "@/assets/product-comparison.png";
 
 const SolutionSection = () => (
   <section id="solution" className="py-24 px-6 bg-section-alt">
@@ -25,6 +26,9 @@ const SolutionSection = () => (
         <div className="flex items-center justify-center">
           <img src={maglevPhoto} alt="Magnetic levitation technology" className="rounded-lg shadow-lg max-w-full h-auto" />
         </div>
+      </div>
+      <div className="flex items-center justify-center mb-10">
+        <img src={productComparison} alt="FOG vs Levionics gyroscope size comparison" className="rounded-lg max-w-full md:max-w-2xl h-auto" />
       </div>
       <div className="grid md:grid-cols-3 gap-6">
         {[

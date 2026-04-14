@@ -1,6 +1,9 @@
+import konstantinosPhoto from "@/assets/konstantinos-photo.png";
+import pepijnPhoto from "@/assets/pepijn-photo.png";
+
 const team = [
-  { name: "Konstantinos Chanioglou", role: "Co-Founder & Business Developer", bg: "MSc Software Engineering" },
-  { name: "Pepijn van Kampen", role: "Co-Founder & Technical Lead", bg: "Ir. MSc Mechanical Engineering" },
+  { name: "Konstantinos Chanioglou", role: "Co-Founder & Business Developer", bg: "MSc Software Engineering", photo: konstantinosPhoto },
+  { name: "Pepijn van Kampen", role: "Co-Founder & Technical Lead", bg: "Ir. MSc Mechanical Engineering", photo: pepijnPhoto },
 ];
 
 const advisors = [
@@ -15,9 +18,7 @@ const TeamSection = () => (
       <div className="grid md:grid-cols-2 gap-6 mb-12">
         {team.map((m) => (
           <div key={m.name} className="bg-card rounded-lg p-6 border border-border text-center">
-            <div className="w-16 h-16 rounded-full bg-primary/15 text-primary font-heading font-bold text-xl flex items-center justify-center mx-auto mb-4">
-              {m.name.split(" ").map(n => n[0]).join("")}
-            </div>
+            <img src={m.photo} alt={m.name} className="w-24 h-24 rounded-full object-cover mx-auto mb-4" />
             <h3 className="font-heading font-semibold text-foreground text-lg">{m.name}</h3>
             <p className="text-primary text-sm font-medium mb-1">{m.role}</p>
             <p className="text-muted-foreground text-sm">{m.bg}</p>
@@ -33,9 +34,6 @@ const TeamSection = () => (
           </div>
         ))}
       </div>
-      <p className="text-center text-muted-foreground text-sm mt-8">
-        Backed by NWO, European Research Council, Dutch Ministry of Defence & partnered with Lobster Robotics and Aqua Smart XL.
-      </p>
     </div>
   </section>
 );
