@@ -7,7 +7,7 @@ const WhySection = () => (
         {[
           { stat: "€600M", label: "Addressable market by 2035 in maritime gyroscopes alone" },
           { stat: "60+", label: "Industry interviews validating the unmet need" },
-          { stat: "TRL 4", label: "Proof of concept achieved — TRL 5 targeted May 2027" },
+          { stat: "TRL 4", label: "Under progress — TRL 5 expected September 2025" },
         ].map((item) => (
           <div key={item.stat} className="text-center">
             <div className="font-heading text-4xl font-bold text-primary mb-2">{item.stat}</div>
