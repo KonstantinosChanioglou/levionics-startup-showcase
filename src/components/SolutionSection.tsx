@@ -28,22 +28,12 @@ const SolutionSection = () => (
         </div>
       </div>
 
-      {/* First feature card */}
-      <div className="mb-8">
+      {/* Three feature cards side by side */}
+      <div className="grid md:grid-cols-3 gap-6 mb-8">
         <div className="bg-card rounded-lg p-6 border border-border">
           <h3 className="font-heading text-lg font-semibold text-foreground mb-2">Ultra Low Mechanical Drift</h3>
           <p className="text-muted-foreground text-sm leading-relaxed">Diamagnetic levitation eliminates springs, vibrations, and aging effects that plague MEMS sensors.</p>
         </div>
-      </div>
-
-      {/* Prototype image */}
-      <div className="flex flex-col items-center justify-center mb-8">
-        <h3 className="font-heading text-2xl font-bold text-foreground mb-4">Prototype</h3>
-        <img src={productComparison} alt="FOG vs Levionics gyroscope size comparison" className="rounded-lg max-w-full md:max-w-2xl h-auto" />
-      </div>
-
-      {/* Remaining two feature cards */}
-      <div className="grid md:grid-cols-2 gap-6">
         <div className="bg-card rounded-lg p-6 border border-border">
           <h3 className="font-heading text-lg font-semibold text-foreground mb-2">Compact & Power Efficient</h3>
           <p className="text-muted-foreground text-sm leading-relaxed">No kilometer-scale fiber coils. Our microscopic structures replace the bulk of optical gyroscopes.</p>
@@ -52,6 +42,12 @@ const SolutionSection = () => (
           <h3 className="font-heading text-lg font-semibold text-foreground mb-2">Scalable Deployment</h3>
           <p className="text-muted-foreground text-sm leading-relaxed">Low cost and small form factor finally enable navigation-grade autonomy across fleet-scale platforms.</p>
         </div>
+      </div>
+
+      {/* Prototype image */}
+      <div className="flex flex-col items-center justify-center">
+        <h3 className="font-heading text-2xl font-bold text-foreground mb-4">Prototype</h3>
+        <img src={productComparison} alt="FOG vs Levionics gyroscope size comparison" className="rounded-lg max-w-full md:max-w-2xl h-auto" />
       </div>
     </div>
   </section>
