@@ -4,7 +4,7 @@ import ProblemSection from "@/components/ProblemSection";
 import SolutionSection from "@/components/SolutionSection";
 import WhySection from "@/components/WhySection";
 import TeamSection from "@/components/TeamSection";
-import NewsSection from "@/components/NewsSection";
+
 import SupportedSection from "@/components/SupportedSection";
 import CTASection, { Footer } from "@/components/CTASection";
 
