@@ -1,9 +1,10 @@
 import konstantinosPhoto from "@/assets/konstantinos-photo.png";
 import pepijnPhoto from "@/assets/pepijn-photo.png";
+import { Linkedin } from "lucide-react";
 
 const team = [
-  { name: "Konstantinos Chanioglou", role: "Co-Founder & Business Developer", bg: "MSc Software Engineering", photo: konstantinosPhoto },
-  { name: "Pepijn van Kampen", role: "Co-Founder & Technical Lead", bg: "Ir. MSc Mechanical Engineering", photo: pepijnPhoto },
+  { name: "Konstantinos Chanioglou", role: "Co-Founder & Business Developer", bg: "MSc Software Engineering", photo: konstantinosPhoto, linkedin: "https://www.linkedin.com/in/konstantinos-chanioglou-a34b8b190/" },
+  { name: "Pepijn van Kampen", role: "Co-Founder & Technical Lead", bg: "Ir. MSc Mechanical Engineering", photo: pepijnPhoto, linkedin: "https://www.linkedin.com/in/pepijn-van-kampen/" },
 ];
 
 const advisors = [
@@ -21,7 +22,10 @@ const TeamSection = () => (
             <img src={m.photo} alt={m.name} className="w-24 h-24 rounded-full object-cover mx-auto mb-4" />
             <h3 className="font-heading font-semibold text-foreground text-lg">{m.name}</h3>
             <p className="text-primary text-sm font-medium mb-1">{m.role}</p>
-            <p className="text-muted-foreground text-sm">{m.bg}</p>
+            <p className="text-muted-foreground text-sm mb-3">{m.bg}</p>
+            <a href={m.linkedin} target="_blank" rel="noopener noreferrer" className="inline-flex items-center justify-center w-8 h-8 rounded-full bg-primary/10 text-primary hover:bg-primary hover:text-primary-foreground transition-colors">
+              <Linkedin className="w-4 h-4" />
+            </a>
           </div>
         ))}
       </div>
