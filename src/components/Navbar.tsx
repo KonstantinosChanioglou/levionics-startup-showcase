@@ -4,7 +4,7 @@ const Navbar = () => (
   <nav className="fixed top-0 w-full z-50 bg-hero/90 backdrop-blur-md border-b border-border/30">
     <div className="max-w-6xl mx-auto px-6 py-4 flex items-center justify-between">
       <a href="#" className="flex items-center">
-        <img src={logo} alt="Levionics" className="h-7" />
+        <img src={logo} alt="Levionics" className="h-10" />
       </a>
       <div className="hidden md:flex items-center gap-8">
         <a href="#problem" className="text-muted-foreground hover:text-foreground text-sm transition-colors">Problem</a>
